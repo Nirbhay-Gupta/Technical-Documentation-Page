@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page
+    </title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentation</header>
+        <a href="#Introduction">Introduction</a>
+        <a href="#Javascript">Javascipt</a>
+        <a href="#Variable">Variable</a>
+        <a href="#Scope">Scope</a>
+        <a href="#Function">Function</a>
+
+
+
+
+
+    </nav>
+    <div>
+    <main id="main-doc">
+        <section class="main-section">
+            <header id="Introduction">Introduction</header>
+            <p>Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create
+                client-side dynamic pages.
+
+                JavaScript is an object-based scripting language which is lightweight and cross-platform.
+
+                JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator
+                (embedded in the browser) is responsible for translating the JavaScript code for the web browser.</p>
+            <p>The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript
+                Internationalization API specification (ECMA-402). The JavaScript documentation throughout MDN is based
+                on the latest draft versions of ECMA-262 and ECMA-402. And in cases where some proposals for new
+                ECMAScript features have already been implemented in browsers, documentation and examples in MDN
+                articles may use some of those new features.
+
+                Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are
+                trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two
+                programming languages have very different syntax, semantic, and use.</p>
+        </section>
+        <section class="main-section">
+            <header id="Javascript">Javascript</header>
+            <p>
+                JavaScript (js) is a light-weight object-oriented programming language which is used by several websites
+                for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic
+                interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for
+                adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by
+                all other graphical web browsers. With JavaScript, users can build modern web applications to interact
+                directly without reloading the page every time. The traditional website uses js to provide several forms
+                of interactivity and simplicity.
+            <p>
+                Although, JavaScript has no connectivity with Java programming language. The name was suggested and
+                provided in the times when Java was gaining popularity in the market. In addition to web browsers,
+                databases such as CouchDB and MongoDB uses JavaScript as their scripting and query language.
+            </p>
+
+            </p>
+        </section>
+        <section class="main-section">
+            <header id="Variable">Variable</header>
+            <p>
+                A JavaScript variable is simply a name of storage location. There are two types of variables in
+                JavaScript : local variable and global variable.
+
+                There are some rules while declaring a JavaScript variable (also known as identifiers).
+
+                1. Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
+                2. After first letter we can use digits (0 to 9), for example value1.
+                3. JavaScript variables are case sensitive, for example x and X are different variables.
+                <code>var x = 10;  
+                var _value="sonoo"; </code>
+                <code>var  123=30;  
+                    var *aa=320;  </code>
+            </p>
+        </section>
+        <section class="main-section">
+            <header id="Scope">Scope</header>
+            <p>
+                The current context of execution. The context in which values and expressions are "visible" or can be
+                referenced. If a variable or other expression is not "in the current scope," then it is unavailable for
+                use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but
+                not vice versa.
+
+                A function serves as a closure in JavaScript, and thus creates a scope, so that (for example) a variable
+                defined exclusively within the function cannot be accessed from outside the function or within other
+                functions. For instance, the following is invalid:\
+                <code>
+                    function exampleFunction() {
+                        var x = "declared inside function";  // x can only be used in exampleFunction
+                        console.log("Inside function");
+                        console.log(x);
+                    }
+                    
+                    console.log(x);  // Causes error
+                </code>
+            </p>
+            <p>
+                However, the following code is valid due to the variable being declared outside the function, making it
+                global:
+            </p>
+            <code>
+                var x = "declared outside function";
+
+                   exampleFunction();
+
+                  function exampleFunction() {
+                   console.log("Inside function");
+                   console.log(x);
+               }
+
+               console.log("Outside function");
+               console.log(x);
+            </code>
+
+        </section>
+        <section class="main-section">
+            <header id="Function">Function</header>
+            <p>
+                avaScript functions are used to perform operations. We can call JavaScript function many times to reuse
+                the code.
+
+                Advantage of JavaScript function
+                There are mainly two advantages of JavaScript functions.
+
+                1.Code reusability: We can call a function several times so it save coding.
+                2.Less coding: It makes our program compact. We don’t need to write many lines of code each time to
+                  perform a common task.
+            </p>
+            <h4>Function Syntax</h4>
+            <code>
+                function functionName([arg1, arg2, ...argN]){  
+                    //code to be executed  
+                   }  
+            </code>   
+            <h3>JavaScript Function Example</h3>  
+            <p>
+                Let’s see the simple example of function in JavaScript that does not has arguments.
+            </p> 
+            <code>
+                 
+                    function msg(){  
+                    alert("hello! this is message");  
+                    }  
+                    
+                
+            </code> 
+        </section>
+    </main>
+</div>
+</body>
+
+</html>

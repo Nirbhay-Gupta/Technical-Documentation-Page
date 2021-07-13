@@ -1,0 +1,35 @@
+
+header{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#main-doc{
+    position: absolute;
+    left: 15%;
+}
+#navbar{
+    position: fixed;
+}
+#navbar a{
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+code{
+    display: block;
+    background-color: grey
+}
+@media screen and (max-width: 750px) {
+    #main-doc{
+        position: absolute;
+        top: 40%; 
+
+    }
+#navbar{
+    position: inherit;
+}
+    
+}
